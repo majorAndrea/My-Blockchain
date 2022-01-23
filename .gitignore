@@ -1,0 +1,4 @@
+dist
+node_modules
+keys.txt
+.DS_Store

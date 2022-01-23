@@ -1,0 +1,27 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "A simple blockchain",
+  "main": "main.js",
+  "scripts": {
+    "start:compile": "npx tsc",
+    "start:watch": "npx tsc -w",
+    "start:keygen": "npm run start:compile && node dist/utils/keygenerator.util.js",
+    "start": "npm run clear:dist && npm run start:compile && node dist/main.js",
+    "clear:dist": "rm -rf dist"
+  },
+  "author": "Andrea",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/crypto-js": "^4.1.0",
+    "@types/elliptic": "^6.4.14",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "eslint": "^8.7.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "elliptic": "^6.5.4"
+  }
+}
